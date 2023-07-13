@@ -31,15 +31,24 @@ plusButton.addEventListener('click',function() {
     var deleteButton = clone.querySelector(".minusButton");
     var inputField = clone.querySelector("#field");
     inputField.value = '';
+    // document.getElementById(deleteButton).style.top = "0.5rem"
     // deleteButton.forEach(function(button) {
     //     button.addEventListener('click', function() {
     //         button.closest(".toDoList").remove();
     //     });
     // });
+    // clone.style.position = "relative";
+    // deleteButton.style.postion = "absolute";
+    // deleteButton.style.right = "0.5rem";
+    // deleteButton.style.top = "0.44rem";
     deleteButton.addEventListener("click", function() {
         var listItem = deleteButton.closest(".toDoList");
         listItem.remove();
     });
+    // var clonedForm = clone.querySelector("form");
+    // clonedForm.style.display = "inherit";
+    // clonedForm.style.alignItems = "center";
+    // clonedForm.style.margin = "auto";
     document.body.appendChild(clone);
 });
 
